@@ -18,13 +18,14 @@ body {
 }
 .header {
   width: 100%;
-  min-width: 960px;
+  /* min-width: 960px; */
+  /* padding: 0 20px; */
 }
 .header_inner {
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  padding: 10px 20px;
+  justify-content: space-between;
+  padding: 10px 30px;
 }
 .header__inner .header__logo {
   width: 100%;
@@ -33,9 +34,6 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-.nav {
-  /* width: 100%; */
 }
 .nav_list li {
   display: inline;
@@ -111,7 +109,6 @@ body {
   font-weight: 500;
 }
 .project {
-  margin-top: 300px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -137,7 +134,7 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  margin-bottom: 30px;
+  margin: 300px auto;
 }
 .project_card {
   border-radius: 20px;
@@ -193,10 +190,56 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  position: relative;
+  font-family: "Anton", sans-serif;
   text-align: center;
+  margin-top: 400px;
+}
+.portfolio_btn {
+  font-size: 36px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 20px 60px;
+  border-radius: 999px;
+  margin-top: 50px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+.contact_sticker {
+  position: absolute;
+  /* 피그마의 Ignore auto layout 또는 Absolute position과 유사함 */
+
+  width: 110px;
+  height: auto;
 }
 
+.contact_sticker_blue {
+  left: 25%;
+  bottom: 0%;
+}
+
+.contact_sticker_red {
+  right: 20%;
+  top: 0%;
+}
+.contact h2 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.contact p {
+  margin: 32px 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+.portfolio_btn:hover {
+  /* transition: all 0.3s ease; */
+  background-color: #ffffff;
+  color: #000000;
+}
 /* cursur */
 /* --------------------------------
    Custom Cursor
@@ -244,4 +287,72 @@ body {
   width: 70px;
   height: 70px;
   /* 커서 원을 크게 확대함 */
+}
+.footer {
+  margin-top: 200px;
+  padding: 56px 40px 24px;
+
+  background-color: #baff00;
+  color: #000000;
+}
+.footer_info h2 {
+  margin: 0 0 20px;
+
+  font-size: 20px;
+}
+.footer_info p {
+  margin: 6px 0;
+
+  font-size: 13px;
+}
+.footer_line {
+  width: 100%;
+  height: 1px;
+
+  margin: 48px 0 32px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_bottom p {
+  margin: 0;
+
+  font-size: 12px;
+}
+
+.footer_tags {
+  display: flex;
+  gap: 8px;
+}
+
+.footer_tags span {
+  padding: 8px 14px;
+
+  background-color: #000000;
+
+  border-radius: 999px;
+
+  color: #ffffff;
+
+  font-size: 11px;
+}
+
+.footer_logo {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin-top: 24px;
 }
